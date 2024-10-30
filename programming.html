@@ -1,0 +1,115 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css"/>
+<title>Website Assignment</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+
+<script type="text/javascript">
+function check()
+{	
+	var uname=document.getElementById("uname").value;
+	var pwd=document.getElementById("pwd").value;
+	
+	if(uname=='balavamsi' && pwd=='lanke123')
+	{
+		document.getElementById("form1").action="home.html";
+	
+	}
+	else
+	{
+		document.getElementById("err").innerHTML="Username or password is incorrect";
+		return false;
+	}
+}
+</script>
+</head>
+
+
+<body>
+
+
+<div class="topheader" >
+<div class="left">Gmail Id:balavamsilanke1@gmail.com</div>
+<div class="right">Instagram Id:balavamsilanke</div>
+</div>
+
+
+<div class="header">
+<div class=row></div>
+<div class="hpart1">BALAVAMSI WEBSITE</div>
+<div class="hpart2"><a href="login.html" class="login">LOGIN</a></div>
+</div>
+
+<div class="menubar">
+<ul>
+	<li><a href="">Home</a></li>
+	<li><a href="#courses">Courses</a></li>
+	<li><a href="#about us">About</a></li>
+	<li><a href="#success">Success Milestones</a></li>
+</ul>
+</div>
+
+<div class="bodypart">
+<br/>
+<h1 class="sectitle">LOGIN FORM</h1><br/></br>
+<form id="form1" name="form1" class="loginform" onsubmit="return check()">
+Username: <input type="text" id="uname" name="uname" value=""/><br/><br/>
+Password: <input type="password" id="pwd" name="pwd" value=""/><br/><br/>
+<input type="submit" value="Login"/>
+
+</form>
+<br/>
+<br/>
+
+<div id="err" style="color:red;text-align:center"></div>
+
+</div>
+
+
+<br/>
+<br/>
+
+
+
+<div class="footer">
+
+<div class="part20">
+<h3>YouTube Channel Links</h3>
+<a href="#">C programminng</a></br>
+<a href="#">JAVA</a></br>
+<a href="#">ANGULAR</a></br>
+<a href="#">LINUX</a></br>
+</div>
+
+<div class="part20">
+<h3>Social Media Links</h3>
+<a href="#">Telegram</a></br>
+<a href="#">whatsapp</a></br>
+<a href="#">instagram</a></br>
+<a href="#">youtube</a></br>
+<a href="#">skype</a></br>
+
+
+</div>
+<div class="part40">
+<h3>Submit Your Requests</h3>
+<form>
+Email:<br/>
+<input type="email" class="footerform"><br/>
+Request:<br/>
+<textarea rows="10" cols="38"></textarea></br>
+<input type="submit" class="footerformbtn" value="Submit">
+
+
+
+
+
+</form>
+</div>
+
+
+</div>
+
+
+</body>
+</html>
